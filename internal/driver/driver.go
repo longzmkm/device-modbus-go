@@ -260,6 +260,7 @@ loop:
 		for _, count := range d.workingAddressCount {
 			if count != 0 {
 				// wait a moment and check again
+				driver.Logger.Info(fmt.Sprintf(">>>>>>>>>>222222222222>>>>>>>>>>>>"))
 				time.Sleep(time.Second * SERVICE_STOP_WAIT_TIME)
 				continue loop
 			}

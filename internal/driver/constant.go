@@ -34,7 +34,7 @@ const (
 	// RAW_TYPE define binary data type which read from Modbus device
 	RAW_TYPE = "rawType"
 
-	SERVICE_STOP_WAIT_TIME = 1
+	SERVICE_STOP_WAIT_TIME = 10
 )
 
 var PrimaryTableBitCountMap = map[string]uint16{
