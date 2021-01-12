@@ -12,7 +12,7 @@ DOCKERS=docker_device_modbus_go
 VERSION=$(shell cat ./VERSION 2>/dev/null || echo 0.0.0)
 
 GIT_SHA=$(shell git rev-parse HEAD)
-GOFLAGS=-ldflags "-X https://proxy.golang.org/github.com/edgexfoundry/device-sdk-go/@v/v1.4.0.mod"
+GOFLAGS=-ldflags "-X cmd/@v/v1.4.0.mod"
 
 build: $(MICROSERVICES)
 	$(GO) build ./...
